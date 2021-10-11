@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "",
+    siteUrl: "https://relaxed-cray-c503d4.netlify.app/",
     title: "JamsInfo",
   },
   plugins: [
