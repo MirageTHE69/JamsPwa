@@ -11,10 +11,11 @@ module.exports = {
         short_name: `SH Guide`,
         description: `Guide for residents of the ABC123 Smart Home`,
         start_url: `/`,
-        background_color: `#0a68f0`,
-        theme_color: `#0a68f0`,
+        background_color: `#ff6f00`,
+        theme_color: `#ff6f00`,
         display: `standalone`,
-         icon: `src/images/icon.png`,
+        icon: `src/images/icon.png`,
+        cursor:true,
         icons: [
           {
             "src": "./src/icons/icon-72x72.png",
