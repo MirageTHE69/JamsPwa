@@ -7,9 +7,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `My Smart-Home Guide`,
+        name: `JamsInfotech`,
         short_name: `SH Guide`,
-        description: `Guide for residents of the ABC123 Smart Home`,
+        description: `Trial One`,
         start_url: `/`,
         background_color: `#ff6f00`,
         theme_color: `#ff6f00`,
