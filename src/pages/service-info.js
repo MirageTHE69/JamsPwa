@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Services from "../components/services"
 
 
 
@@ -12,13 +13,9 @@ const IndexPage = () => (
   
     <div>
       <div class="grid grid-cols-3 w-full gap-3 py-5 px-2">
-        <div class="w-14 h-16 flex pt-2 pl-1.5 flex-col active:border-2 active: border-purple-400">
-       <Link to="/service-package" >  <div class="bg-yellow-200 w-10 h-10"></div> </Link>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
+
+          <Services/>
+
         <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
           <div class="bg-yellow-200 w-10 h-10"></div>
           <div class="w-full h-6 text-xs pt-2 pl-1">

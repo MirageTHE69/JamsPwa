@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
+import Packages  from "../components/packages"
 
 
 const IndexPage = () => (
@@ -13,18 +13,9 @@ const IndexPage = () => (
     <p class="text-center text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus.</p>
     </div>
 <div class="space-y-2 h-full px-3">
-  <div class="w-full h-8 bg-purple-600 mt-3 flex items-center justify-center">
 
-    <div class="flex w-full justify-between items-center px-3">
-        <span> Puja</span>
-       <div class="">
-        <input type="radio"/>
-       </div>
-
-    </div>
-
-  </div>
-
+      <Packages/>
+      
 </div>
 
 <div class="w-full flex items-center justify-center pb-4">  
