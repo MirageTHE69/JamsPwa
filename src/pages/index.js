@@ -14,15 +14,17 @@ const IndexPage = () => {
 
   useEffect(() => {
 		axios
-			.get('categories/getjioCateygory')
+			.get('/categories/getjioCateygory')
 			.then(response => {
 				setCategories(response.data.data.categories);
+        console.log(response.data)
+       
 			})
 			.catch(err => {
 				setCategories([]);
 				console.log(err.response);
 			});
-    });
+    },[]);
 
 
   return(
@@ -54,34 +56,23 @@ const IndexPage = () => {
 
 </div>
 
-<div className='h-1/4 bg-yellow-50 flex justify-center items-center pr-5 pl-5'>
-   <div className='grid grid-cols-3 h-full w-full gap-3  '>
-     
-          {
+<div className='h-1/4 bg-yellow-200 flex justify-center items-center pr-5 pl-5'>
+<div className='grid grid-cols-3 h-full w-full gap-3 py-4 ' >
+							{
 								categories
-									? categories.lengthf
+									? categories.length
 										? categories.map((cat, i) => <Categories
 											key={i}
 											title={cat.title}
 											image={`${URL}/images/${cat.image}`}
 											href={`/#section-categories-${i}`}
-                     
 										/>)
 										: <h2>No data found</h2>
 									: <div className='flex justify-center col-span-full'>
-									
+										
 									</div>
 							}
-        
-        
-  
-
-        <div className='bg-yellow-300'> </div>
-        <Link to='/service-info' className='bg-yellow-300'>
-           <div className='bg-yellow-300'  ></div>
-        </Link>
-
-   </div>
+						</div>
 </div>
 
 </div>

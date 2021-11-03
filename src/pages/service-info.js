@@ -1,11 +1,14 @@
-import * as React from "react"
+import React,{ useState, useEffect } from 'react';
 import { Link } from "gatsby"
 import Services from "../components/services"
+import axios, { URL } from '../services/api';
 
 
 
-const IndexPage = () => (
-  
+const IndexPage = () => {
+
+	
+  return(
     <div class="w-60 h-80">
     <div class="flex justify-center pt-2">
       <span> select any service </span>
@@ -16,61 +19,7 @@ const IndexPage = () => (
 
           <Services/>
 
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
-  
-        <div class="w-14 h-16 flex pt-2 pl-2 flex-col">
-          <div class="bg-yellow-200 w-10 h-10"></div>
-          <div class="w-full h-6 text-xs pt-2 pl-1">
-            <span> bhojan </span>
-          </div>
-        </div>
+
       </div>
   
       <div class="px-24 ml-2">
@@ -82,5 +31,7 @@ const IndexPage = () => (
   </div>
   
 )
+}
+
 
 export default IndexPage;
